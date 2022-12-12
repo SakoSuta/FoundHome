@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Une description de la page" />
-        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style/css/reset.css" />
         <link rel="stylesheet" href="style/css/Style.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,49 +15,119 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <nav>
-            <a class="nav-link active" href="">Acceuil</a>
-            <a class="nav-link active" href="">Nos Agences</a>
-            <Span>FOUNDHOME</Span>
-            <a class="nav-link active" href="">Galerie</a>
-            <a class="nav-link active" href="">A propos</a>
-            <a class="nav-link active" href="">Contact</a>
+            <div class="nav">
+                <div class="LinkID">
+                    <a class="Monts600 font20" href="#Acceuil">Acceuil</a>
+                    <a class="Monts600 font20" href="#Boutique">Nos Agences</a>
+                </div>
+                <Span class="Monts500 font40">FOUNDHOME</Span>
+                <div class="LinkID">
+                    <a class="Monts600 font20" href="#Galerie">Galerie</a>
+                    <a class="Monts600 font20" href="#Propos">A propos</a>
+                    <a class="Monts600 font20" href="">Contact</a>
+                </div>
+            </div>
         </nav>
         <main>
-            <section class="Intro">
-                <h1>Trouver votre nouvelle maison</h1>
-                <button>contactez-nous</button>
+            <section class="Intro" id="Acceuil">
+                <div class="ContenuIntro">
+                    <h1 class="Monts600 font64">Trouver votre nouvelle maison</h1>
+                    <button class="Monts600 font18 HoverButton">Contactez-nous</button>
+                </div>
             </section>
-            <section>
-                <h2>A propos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Bibendum nulla proin neque vitae. Ipsum mattis vel sed tortor feugiat risus. Vulputate nunc volutpat enim nulla. Nisl eget neque diam magna at facilisis consequat aliquet. Mauris egestas quis nisl pharetra risus.</p>
-                <p>Lectus quis dolor senectus mi. Arcu turpis felis sit netus vitae diam a risus. Leo nibh enim magna cursus sit faucibus mauris. Id quis aliquam ac pretium. Non lectus leo aliquam dignissim ipsum ut amet. Ornare vitae dignissim volutpat in. Facilisis ipsum sapien sem auctor nec pellentesque.</p>
-                <p>Adipiscing eget eget tristique iaculis eget et quis nunc rutrum. Duis tellus donec nunc hendrerit rhoncus. Lectus cursus tortor convallis risus. Nunc potenti magna volutpat congue sit. Facilisis sagittis tellus egestas odio a faucibus tincidunt donec magna. Ullamcorper etiam elit risus amet.</p>
+            <section class="Propos" id="Propos">
+                <div class="ContenuPropos">
+                    <h2 class="Monts400 font32">A propos</h2>
+                    <div class="TextPropos">
+                        <p class="Monts400 font16">Lorem ipsum dolor sit amet consectetur. Bibendum nulla proin neque vitae. Ipsum mattis vel sed tortor feugiat risus. Vulputate nunc volutpat enim nulla. Nisl eget neque diam magna at facilisis consequat aliquet. Mauris egestas quis nisl pharetra risus.</p>
+                        <p class="Monts400 font16">Lectus quis dolor senectus mi. Arcu turpis felis sit netus vitae diam a risus. Leo nibh enim magna cursus sit faucibus mauris. Id quis aliquam ac pretium. Non lectus leo aliquam dignissim ipsum ut amet. Ornare vitae dignissim volutpat in. Facilisis ipsum sapien sem auctor nec pellentesque.</p>
+                        <p class="Monts400 font16">Adipiscing eget eget tristique iaculis eget et quis nunc rutrum. Duis tellus donec nunc hendrerit rhoncus. Lectus cursus tortor convallis risus. Nunc potenti magna volutpat congue sit. Facilisis sagittis tellus egestas odio a faucibus tincidunt donec magna. Ullamcorper etiam elit risus amet.</p>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>Nos Boutiques</h2>
-                <img src="style/img/Ville/Paris.png" alt="Paris">
-                <h3>Paris</h3><p>52 Rue Jenner, 75013 Paris</p><p>7h00 - 20h00</p>
-                <img src="style/img/Ville/Toulouse.png" alt="Toulouse">
-                <h3>Toulouse</h3><p>4 Rue Suger, 31000 Toulouse</p><p>7h00 - 20h00</p>
-                <img src="style/img/Ville/Lille.png" alt="Lille">
-                <h3>Lille</h3><p>23 Avenue Duquesne, 59000 Lille</p><p>7h00 - 20h00</p>
+            <section class="Shop" id="Boutique">
+                <div class="ContenuShop">
+                    <h2>Nos Boutiques</h2>
+                    <div class="AllCity">
+                        <div class="City">
+                            <img src="style/img/Ville/Paris.png" alt="Paris">
+                            <div class="Adresse">
+                                <h3 class="Monts600 font38">Paris</h3><p class="Monts600 font18">52 Rue Jenner, 75013 Paris</p><p class="Monts600 font18">7h00 - 20h00</p>
+                            </div>
+                        </div>
+                        <div class="City">
+                            <img src="style/img/Ville/Toulouse.png" alt="Toulouse">
+                            <div class="Adresse">
+                                <h3 class="Monts600 font38">Toulouse</h3><p class="Monts600 font18">4 Rue Suger, 31000 Toulouse</p><p class="Monts600 font18">7h00 - 20h00</p>
+                            </div>
+                        </div>
+                        <div class="City">
+                            <img src="style/img/Ville/Lille.png" alt="Lille">
+                            <div class="Adresse">
+                                <h3 class="Monts600 font38">Lille</h3><p class="Monts600 font18">23 Avenue Duquesne, 59000 Lille</p><p class="Monts600 font18">7h00 - 20h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>Galerie</h2>
-                <img src="style/img/Galerie/Galerie1.png" alt="Image Galerie">
-                <img src="style/img/Galerie/Galerie2.png" alt="Image Galerie">
-                <img src="style/img/Galerie/Galerie3.png" alt="Image Galerie">
-                <img src="style/img/Galerie/Galerie4.png" alt="Image Galerie">
-                <img src="style/img/Galerie/Galerie5.png" alt="Image Galerie">
-                <img src="style/img/Galerie/Galerie6.png" alt="Image Galerie">
-                <img src="style/img/Galerie/Galerie7.png" alt="Image Galerie">
+            <section class="Galerie" id="Galerie">
+                <div class="ContenuGalerie">
+                    <h2 class="Monts400 font24">Galerie</h2>
+                    <div class="Image">
+                        <img class="Img1" src="style/img/Galerie/Galerie1.png" alt="Image Galerie">
+                        <img class="Img2" src="style/img/Galerie/Galerie2.png" alt="Image Galerie">
+                        <img class="Img3" src="style/img/Galerie/Galerie3.png" alt="Image Galerie">
+                        <img class="Img4" src="style/img/Galerie/Galerie4.png" alt="Image Galerie">
+                        <img class="Img5" src="style/img/Galerie/Galerie5.png" alt="Image Galerie">
+                        <img class="Img6" src="style/img/Galerie/Galerie6.png" alt="Image Galerie">
+                        <img class="Img7" src="style/img/Galerie/Galerie7.png" alt="Image Galerie">
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>Avis</h2>
-                <h3>Eva Bouvet</h3>
-                <p>
-                    « Lorem ipsum dolor sit amet consectetur. Arcu risus cras mattis etiam eleifend mattis mi. Egestas sit sollicitudin diam sit laoreet. Aliquet habitasse iaculis libero laoreet. »
-                </p>
+            <section class="Avis">
+                <h2 class="Monts400 font24">Avis</h2>
+                <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="ContenuAvis">
+                            <div class="AvisCenter">
+                                <h3 class="Monts600 font32">Eva Bouvet 1</h3>
+                                <p class="Monts500I font24">
+                                    « Lorem ipsum dolor sit amet consectetur. Arcu risus cras mattis etiam eleifend mattis mi. Egestas sit sollicitudin diam sit laoreet. Aliquet habitasse iaculis libero laoreet. »
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="ContenuAvis">
+                            <div class="AvisCenter">
+                                <h3 class="Monts600 font32">Eva Bouvet 2</h3>
+                                <p class="Monts500I font24">
+                                    « Lorem ipsum dolor sit amet consectetur. Arcu risus cras mattis etiam eleifend mattis mi. Egestas sit sollicitudin diam sit laoreet. Aliquet habitasse iaculis libero laoreet. »
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="ContenuAvis">
+                            <div class="AvisCenter">
+                                <h3 class="Monts600 font32">Eva Bouvet 3</h3>
+                                <p class="Monts500I font24">
+                                    « Lorem ipsum dolor sit amet consectetur. Arcu risus cras mattis etiam eleifend mattis mi. Egestas sit sollicitudin diam sit laoreet. Aliquet habitasse iaculis libero laoreet. »
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
         </main>
         <footer>

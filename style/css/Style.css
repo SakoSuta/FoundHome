@@ -1,12 +1,293 @@
-main {
+.Monts400 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.Monts500 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.Monts600 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.Monts500I {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.Monts600I {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font32 {
+  font-size: 32px;
+}
+
+.font36 {
+  font-size: 36px;
+}
+
+.font40 {
+  font-size: 40px;
+}
+
+.font64 {
+  font-size: 64px;
+}
+
+html {
   width: 100%;
   height: 100%;
 }
-
-.Intro {
-  background: url("/style/img/debut.png");
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+html body nav .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+html body nav .nav .LinkID {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+html body nav .nav .LinkID a {
+  color: #ffffff;
+  text-decoration: none;
+}
+html body nav .nav span {
+  color: #ffffff;
+}
+html body main {
+  width: 100%;
+  height: 100%;
+}
+html body main .Intro {
+  background: url("../img/debut.png");
   background-size: cover;
-  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+html body main .Intro .ContenuIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 95px;
+}
+html body main .Intro .ContenuIntro h1 {
+  width: 50%;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+html body main .Intro .ContenuIntro button {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  padding: 13px 30px;
+  max-width: fit-content;
+}
+html body main .Intro .ContenuIntro button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+html body main .Propos {
+  background: url("../img/Agence.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+html body main .Propos .ContenuPropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  margin: 95px;
+  background-color: rgba(255, 255, 255, 0.88);
+  width: 40%;
+}
+html body main .Propos .ContenuPropos .TextPropos {
+  margin-top: 30px;
+}
+html body main .Shop {
+  height: 534px;
+}
+html body main .Shop .ContenuShop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 95px;
+}
+html body main .Shop .ContenuShop h2 {
+  margin-bottom: 70px;
+}
+html body main .Shop .ContenuShop .AllCity {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+html body main .Shop .ContenuShop .AllCity .City {
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+html body main .Shop .ContenuShop .AllCity .City img {
+  width: 410px;
+  height: 290px;
+}
+html body main .Shop .ContenuShop .AllCity .City .Adresse {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main .Galerie {
+  width: 100%;
+}
+html body main .Galerie .ContenuGalerie {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main .Galerie .ContenuGalerie h2 {
+  margin-top: 50px;
+}
+html body main .Galerie .ContenuGalerie .Image {
+  margin: 80px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 90px);
+  grid-template-rows: repeat(16, 30px);
+  grid-gap: 15px;
+}
+html body main .Galerie .ContenuGalerie .Image .Img1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+html body main .Galerie .ContenuGalerie .Image .Img2 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+html body main .Galerie .ContenuGalerie .Image .Img3 {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+html body main .Galerie .ContenuGalerie .Image .Img4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 17;
+}
+html body main .Galerie .ContenuGalerie .Image .Img5 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 12;
+}
+html body main .Galerie .ContenuGalerie .Image .Img6 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 12;
+  grid-row-end: 17;
+}
+html body main .Galerie .ContenuGalerie .Image .Img7 {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 7;
+  grid-row-end: 17;
+}
+html body main .Galerie .ContenuGalerie .Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body main .Avis {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F4F4;
+}
+html body main .Avis h2 {
+  margin-top: 50px;
+}
+html body main .Avis div {
+  width: 100%;
+  height: 100%;
+}
+html body main .Avis .ContenuAvis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body main .Avis .AvisCenter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+html body main .Avis .AvisCenter h3 {
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=Style.css.map */
