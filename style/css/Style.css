@@ -57,14 +57,6 @@
   font-size: 64px;
 }
 
-html {
-  width: 100%;
-  height: 100%;
-}
-html body {
-  width: 100%;
-  height: 100%;
-}
 html body nav {
   display: flex;
   justify-content: center;
@@ -91,15 +83,13 @@ html body nav .nav span {
 }
 html body main {
   width: 100%;
-  height: 100%;
 }
 html body main .Intro {
   background: url("../img/debut.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-width: 100%;
-  min-height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -162,19 +152,20 @@ html body main .Shop .ContenuShop h2 {
 }
 html body main .Shop .ContenuShop .AllCity {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
 }
 html body main .Shop .ContenuShop .AllCity .City {
-  max-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 html body main .Shop .ContenuShop .AllCity .City img {
-  width: 410px;
-  height: 290px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 html body main .Shop .ContenuShop .AllCity .City .Adresse {
   width: 100%;
