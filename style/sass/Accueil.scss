@@ -1,9 +1,5 @@
 html{
-    width: 100%;
-    height: 100%;
     body{
-        width: 100%;
-        height: 100%;
         nav{
             display: flex;
             justify-content: center;
@@ -30,14 +26,12 @@ html{
         }
         main{
             width: 100%;
-            height: 100%;
             .Intro{
                 background: url("../img/debut.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                min-width: 100%;
-                min-height: 100%;
+                height: 100vh;
                 display: flex;
                 align-items: center;
                 .ContenuIntro{
